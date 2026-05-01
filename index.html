@@ -680,15 +680,16 @@
     }
 
     /* Button 2 — IWC */
-    .card-btn--gold {
-      background: linear-gradient(135deg, #F7A81B 0%, #D4890F 100%);
-      box-shadow: 0 6px 24px rgba(247, 168, 27, 0.40);
-      color: #1A1A2E;
-    }
+.card-btn--gold {
+  background: #F0F4F8;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.10);
+  color: #1A1A2E;
+  border: 1px solid #D8E2EC;
+}
 
-    .card-btn--gold:hover {
-      box-shadow: 0 12px 36px rgba(247, 168, 27, 0.55);
-    }
+.card-btn--gold:hover {
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.15);
+}
 
     /* Button 3 — IHE Delft */
     .card-btn--dark {
@@ -711,9 +712,9 @@
       opacity: 0.85;
     }
 
-    .card-btn--gold .card-btn-label {
-      opacity: 0.75;
-    }
+.card-btn--gold .card-btn-label {
+  opacity: 0.65;
+}
 
     .card-btn-title {
       font-family: Georgia, serif;
@@ -726,9 +727,9 @@
       opacity: 0.7;
     }
 
-    .card-btn--gold .card-btn-arrow {
-      opacity: 0.6;
-    }
+.card-btn--gold .card-btn-arrow {
+  opacity: 0.5;
+}
 
     /* ============================================================
        SECTION 6: SCHOLARSHIP DETAILS
@@ -1321,7 +1322,7 @@
       <div class="partner-logos-row">
         <!-- IWC Logo -->
         <img
-          src="https://images.squarespace-cdn.com/content/v1/6781540008b5461d6425b51e/098907b6-0bcb-47d5-9ee4-82e4b4f6ad1e/IWC+logo.jpg"
+          src="https://iili.io/Bs8rl6P.jpg"
           alt="International WaterCentre - Griffith University"
           class="partner-logo"
         />
@@ -1331,7 +1332,7 @@
 
         <!-- South Pacific Logo -->
         <img
-          src="https://images.squarespace-cdn.com/content/v1/6781540008b5461d6425b51e/507f0f8f-fb65-47cb-9799-284aa54ca9af/South.jpg"
+          src="https://iili.io/Bsrc8qQ.png"
           alt="Rotary South Pacific"
           class="partner-logo"
         />
@@ -1375,40 +1376,14 @@
 
         <!-- RIGHT: Video Player -->
         <div class="video-col">
-          <div class="video-container" id="video-wrapper">
-            <!-- Fallback overlay (shown if video errors) -->
-            <div class="video-fallback" id="video-fallback" role="region" aria-label="Video unavailable">
-              <!-- SVG Play Circle Icon -->
-              <svg xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <circle cx="12" cy="12" r="10"/>
-                <polygon fill="#FFFFFF" stroke="#FFFFFF" points="10 8 16 12 10 16 10 8"/>
-              </svg>
-              <p class="video-fallback-title">Watch: WASH Scholarship Introduction</p>
-              <a
-                href="https://video.squarespace-cdn.com/content/v1/6781540008b5461d6425b51e/6991970b-3319-47cc-a6fc-0270f8912c66/segments/mpegts-h264-640:360.m3u8?Expires=1777398172&Signature=YWRiODkwM2YzZGI4MTQ3OWZiOWNiN2Q2NjdkMWM2MzhlY2FhNzM4NWY4ZjMyYTIwNDI1ZjMxMDUyY2RkNTRjYQ"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="video-fallback-btn"
-              >Watch Video</a>
-            </div>
-
-            <!-- HTML5 Video Element -->
-            <video
-              id="scholarship-video"
-              controls
-              playsinline
-              preload="metadata"
-              style="width:100%;display:block;border-radius:12px;"
-              poster=""
-              aria-label="WASH Scholarship Introduction Video"
-            >
-              <source
-                id="video-source"
-                src="https://video.squarespace-cdn.com/content/v1/6781540008b5461d6425b51e/6991970b-3319-47cc-a6fc-0270f8912c66/segments/mpegts-h264-640:360.m3u8?Expires=1777398172&Signature=YWRiODkwM2YzZGI4MTQ3OWZiOWNiN2Q2NjdkMWM2MzhlY2FhNzM4NWY4ZjMyYTIwNDI1ZjMxMDUyY2RkNTRjYQ"
-                type="application/x-mpegURL"
-              />
-              Your browser does not support the video tag.
-            </video>
+          <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 12px; box-shadow: 0 8px 32px rgba(0,0,0,0.15);">
+            <iframe
+              src="https://player.vimeo.com/video/1188327066?badge=0&autopause=0&player_id=0&app_id=58479"
+              style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"
+              allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
+              allowfullscreen
+              title="WASH Scholarship Introduction Video"
+            ></iframe>
           </div>
           <!-- Video caption -->
           <p class="video-caption">
@@ -1499,6 +1474,14 @@
               <span class="scholar-caption-role">Inaugural WASH Scholar | Fiji</span>
             </div>
           </div>
+          <div style="margin-top: 24px; border-radius: 10px; overflow: hidden; box-shadow: 0 6px 24px rgba(0,0,0,0.12);">
+            <img
+              src="https://iili.io/Bs8PkKB.png"
+              alt="Rotary South Pacific WASH Scholarship — additional photo"
+              style="width: 100%; display: block; height: auto;"
+              loading="lazy"
+            />
+          </div>
         </div><!-- /.scholar-photo-col -->
 
       </div><!-- /.scholar-grid -->
@@ -1539,11 +1522,14 @@
         <!-- Button 2: International WaterCentre -->
         <a href="https://watercentre.org" target="_blank" rel="noopener noreferrer" class="card-btn card-btn--gold" aria-label="Visit the International WaterCentre website">
           <!-- Water/Building SVG icon -->
-          <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#1A1A2E" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <path d="M12 2C6 2 2 7 2 12s4 10 10 10 10-4.5 10-10S18 2 12 2z"/>
-            <path d="M12 8v4l3 3"/>
-            <path d="M7 17s.5-4 5-4 5 4 5 4"/>
-          </svg>
+          <img
+            src="https://iili.io/BsrYKBV.png"
+            alt="International WaterCentre logo"
+            width="36"
+            height="36"
+            style="object-fit: contain; display: block;"
+            loading="lazy"
+          />
           <span class="card-btn-label">Visit the</span>
           <span class="card-btn-title">International WaterCentre (IWC)</span>
           <!-- Right arrow -->
@@ -1574,6 +1560,14 @@
     </div><!-- /.container--narrow -->
   </section>
 
+  <div style="width: 100%; overflow: hidden; line-height: 0;">
+    <img
+      src="https://iili.io/Bs8iBRe.png"
+      alt="Rotary South Pacific WASH Scholarship"
+      style="width: 100%; display: block; height: auto; max-height: 480px; object-fit: cover;"
+      loading="lazy"
+    />
+  </div>
 
   <!-- ============================================================
        SECTION 6: SCHOLARSHIP DETAILS
@@ -1860,6 +1854,47 @@
     </div><!-- /.container--narrow -->
   </section>
 
+  <section id="donate" aria-label="Support the WASH Scholarship">
+    <div style="
+      background: #FFFFFF;
+      padding: 64px 24px;
+      text-align: center;
+    ">
+      <p style="
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1rem;
+        color: #444444;
+        max-width: 560px;
+        margin: 0 auto 28px;
+        line-height: 1.75;
+      ">
+        Your contribution helps sustain this scholarship and supports the next generation of WASH leaders across the South Pacific. Every donation makes a difference.
+      </p>
+      <a
+        href="#"
+        aria-label="Donate to support the Rotary South Pacific WASH Scholarship"
+        style="
+          display: inline-block;
+          background: #00629B;
+          color: #FFFFFF;
+          font-family: 'Open Sans', sans-serif;
+          font-size: 1rem;
+          font-weight: 700;
+          letter-spacing: 2px;
+          text-transform: uppercase;
+          text-decoration: none;
+          padding: 18px 52px;
+          border-radius: 8px;
+          box-shadow: 0 6px 24px rgba(0, 98, 155, 0.38);
+          transition: background 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+        "
+        onmouseover="this.style.background='#003F6B'; this.style.boxShadow='0 12px 36px rgba(0,98,155,0.5)'; this.style.transform='translateY(-3px)';"
+        onmouseout="this.style.background='#00629B'; this.style.boxShadow='0 6px 24px rgba(0,98,155,0.38)'; this.style.transform='translateY(0)';"
+      >
+        Donate Now
+      </a>
+    </div>
+  </section>
 
   <!-- ============================================================
        SECTION 10: FOOTER
@@ -2024,36 +2059,6 @@
         // Fallback: show all immediately if no IntersectionObserver support
         timelineItems.forEach(function (item) {
           item.classList.add('is-visible');
-        });
-      }
-
-      /* ----------------------------------------------------------
-         7. VIDEO FALLBACK — show fallback if video source errors
-      ---------------------------------------------------------- */
-      var videoEl = document.getElementById('scholarship-video');
-      var videoSource = document.getElementById('video-source');
-      var videoFallback = document.getElementById('video-fallback');
-
-      function showVideoFallback() {
-        if (videoFallback && videoEl) {
-          videoFallback.style.display = 'flex';
-          videoEl.style.display = 'none';
-        }
-      }
-
-      if (videoSource && videoEl) {
-        // Listen for error on the source element
-        videoSource.addEventListener('error', showVideoFallback);
-
-        // Also listen for error on the video element itself
-        videoEl.addEventListener('error', showVideoFallback);
-
-        // If the browser reports no supported sources
-        videoEl.addEventListener('emptied', function () {
-          // Only trigger fallback if video has no loaded data
-          if (videoEl.networkState === 3) {
-            showVideoFallback();
-          }
         });
       }
 
